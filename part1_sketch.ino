@@ -88,27 +88,14 @@ while(Serial.available() > 0 || temp>threshold_temperature || value>130) {
    Serial.print('\n');
    Serial.print("Temprature is High");
    Serial.print('\n');
-   //delay(2000);
   }
 else
   {
   digitalWrite(ledPin_temp,LOW);
   Serial.print("Temp is fine");
   Serial.print('\n');
-  //delay(1000);
   }
 }
 
-  /*
-if(statusSensor == 1)
-  {
-    digitalWrite(BUZZER, LOW);
-  }
-else
-{
- digitalWrite(BUZZER, HIGH);
-}
-   */
- //delay(500);
  
 }
