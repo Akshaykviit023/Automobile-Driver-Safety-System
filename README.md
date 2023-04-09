@@ -100,8 +100,10 @@ Overall, this research proposes a novel approach to addressing the critical issu
 <h3>Module-1 Integration</h3>
 <div align="center">
 <img src="https://user-images.githubusercontent.com/73570745/230781467-55420b66-4247-41bb-b34a-bd3c03412b15.png"><br>
+<br>
+ <br>
+</div>
 
-</br>
 <h3>Module-2 Integration</h3>
 <div align="center">
 <img src="https://user-images.githubusercontent.com/73570745/230781485-c97a951a-c577-413b-aad6-cb7cc52c96c0.png"><br>
