@@ -43,7 +43,6 @@ The proposed technology can be integrated with existing automotive systems to im
 </br>
 </ol>
 </li>
-</br>
 <li><b>Serial Communication: </b>The Serial Communication protocol is used to exchange data between the computer and an external device such as Arduino. In the above code, the computer sends signals to the Arduino through the serial port to control an external device based on the driver's drowsiness level. The PySerial library provides the necessary tools for establishing communication between the computer and Arduino. The serial communication protocol sends data bits one at a time over a wire or wireless medium. The protocol has a fixed baud rate that specifies the number of bits transmitted per second. The communication is synchronized using a start and stop bit for each character transmitted, and error detection techniques are used to ensure data integrity.</li>
 </br>
 </ul>
@@ -58,51 +57,46 @@ Overall, this research proposes a novel approach to addressing the critical issu
 <br>
 <br>
 
-<h2>Data visualization</h2>
-Software used: <b>Tableau</b>
-<br>
-<br>
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/113085803/229277065-c75d240b-1b1c-4a42-a43a-53311275cdf0.png"/><br>
-  <b><i>Figure 1<br> Earthquake (identified by Event ID) and the number of stations recording it</i></b>
-  <br>
-  <br>
+<h2>Software used: </h2>
+<ul>
+<li>Visual Studio Code</li>
 
-  <img src="https://user-images.githubusercontent.com/113085803/229278389-8b9951d6-a06b-4316-bed9-fa220b5170a8.png"/>
-  <b><i>Figure 2<br>Earthquake based on its magnitude</i></b>
-  <br>
-  <br>
-  
-  <img src="https://user-images.githubusercontent.com/113085803/229277078-5e2a9ab0-10af-43f6-a862-7727770659ec.png"/>
-  <b><i>Figure 3<br>EEarthquake based on its magnitude type</i></b>
-  <br>
-  <br>
-  
-  <img alt ="[Earthquake magnitude and depth over the years]"
-       src="https://user-images.githubusercontent.com/113085803/229277278-88821402-2d5d-4beb-8644-e2b0b9bd73c0.png"/>
-  <b><i>Figure 4<br>Earthquake magnitude and depth over the years</i></b>
-  <br>
-  <br>
-</div>
+<li>Arduino IDE</li>
 
-<h2>Implementation</h2>
-We will use four models in this project:
-<ol>
-<li>Linear regression</li>
-<li>Support Vector Machine(SVM)</li>
-<li>NaiveBayes</li>
-<li>Random Forest</li>
+<li>Circuit.io</li>
 
-</ol>
-<h3>Linear Regression</h3>
-<p>Linear regression is a type of supervised machine learning algorithm that is used to model the linear relationship between a dependent variable (in this case, earthquake magnitude) and one or more independent variables (in this case, latitude, longitude, depth, and the number of seismic stations that recorded the earthquake).</p>
+<li>TinkerCAD</li>
+</ul>
+</br>
 
-<p>The basic idea behind linear regression is to find the line of best fit through the data that minimizes the sum of the squared residuals (the difference between the predicted and actual values of the dependent variable). The coefficients of the line of best fit are estimated using a method called ordinary least squares, which involves minimizing the sum of the squared residuals with respect to the coefficients.</p>
+<h2>Hardware used: </h2>
+<ul>
+<li>PC Camera</li>
 
-<p>In this situation, we have used multiple linear regression to model the relationship between earthquake magnitude and latitude, longitude, depth, and the number of seismic stations that recorded the earthquake. The multiple linear regression model assumes that there is a linear relationship between the dependent variable (magnitude) and each of the independent variables (latitude, longitude, depth, and number of seismic stations), and that the relationship is additive (i.e., the effect of each independent variable on the dependent variable is independent of the other independent variables).</p>
+<li>Piezo Buzzer</li>
 
-<p>Once the model has been fit to the data, we can use it to predict the magnitude of a new earthquake given its latitude, longitude, depth, and the number of seismic stations that recorded it. This can be useful for earthquake monitoring and early warning systems, as well as for understanding the underlying causes of earthquakes and improving our ability to predict them in the future.</p>
+<li>LM35DZ - Temperature Sensor</li>
 
+<li>HC - 05 Bluetooth Serial Module</li>
+
+<li>Alcohol Gas Sensor - MQ-3</li>
+
+<li>QuadBand GPRS-GSM SIM900A</li>
+
+<li>LED – 5mm</li>
+
+<li>Breadboard</li>
+
+<li>Arduino UNO</li>
+
+<li>Triple-axis Accelerometer + Magnetometer</li>
+
+<li>GPS module</li>
+</ul>
+</br>
+
+<h2>Device setup: </h2>
+</br>
 <div align="center">
 <img src="https://user-images.githubusercontent.com/113085803/229284656-286a3290-3c96-4929-ae31-761456cbc3e4.png"><br>
 <b><i>Figure 5<br>Multiple linear regression plot using seaborn library(python)</i></b>
@@ -110,46 +104,52 @@ We will use four models in this project:
  <br>
 </div>
 
-<p>The linear regression equation used in our multiple linear regression model for earthquake magnitude prediction with latitude, longitude, depth, and number of seismic stations as independent variables can be written as:</p>
-
-<p>Magnitude = -0.6028 * Latitude + 1.2012 * Longitude - 0.0008 * Depth + 0.0239 * No_of_stations + 0.1573</p>
-
-<p>Where:</p>
-<ul>
-<li>Magnitude is the dependent variable, representing the magnitude of the earthquake</li>
-<li>Latitude, Longitude, Depth, and No_of_stations are the independent variables</li>
-<li>The coefficients (-0.6028, 1.2012, -0.0008, and 0.0239) represent the slopes of the regression line for each independent variable</li>
-<li>The intercept (0.1573) represents the predicted magnitude when all independent variables are zero.</li>
-<li>This equation allows us to predict the magnitude of an earthquake based on its latitude, longitude, depth, and the number of seismic stations that recorded it. By plugging in the values of the independent variables for a given earthquake, we can obtain an estimate of its magnitude.</li>
-</ul>
-
-<h3>SVM</h3>
-<p>Support Vector Machines (SVM) is a type of supervised machine learning algorithm that can be used for both regression and classification tasks. The basic idea behind SVM is to find the best boundary that separates the data into different classes or predicts a continuous output variable (in this case, earthquake magnitude).
-</p>
-<p>
-In SVM, the data points are mapped to a higher-dimensional space where the boundary can be easily determined. The best boundary is the one that maximizes the margin, which is the distance between the boundary and the closest data points from each class. This boundary is called the "hyperplane."
-</p>
-<p>
-For regression tasks, SVM uses a similar approach but instead of a hyperplane, it finds a line (or curve in higher dimensions) that best fits the data while maximizing the margin. This line is the "support vector regression line."
-</p>
-<p>
-SVM can handle both linear and non-linear data by using different kernels that transform the data into a higher-dimensional space. Some commonly used kernels include linear, polynomial, and radial basis function (RBF) kernels.
-</p>
-<p>
-Once the SVM model has been trained on the data, it can be used to predict the magnitude of a new earthquake given its features (latitude, longitude, depth, and number of seismic stations). This can be useful for predicting the magnitude of earthquakes in real-time and for better understanding the factors that contribute to earthquake occurrence.
-</p>
+<h2>Block Diagram: </h2>
+</br>
 <div align="center">
-<img src="https://github.com/akash-r34/Earthquake-prediction-using-Machine-learning-models/blob/main/images/SVM_plot.png"><br>
-<b><i>Figure 6<br>SVM plot using matplotlib.pyplot library(python)</i></b>
+![image](https://user-images.githubusercontent.com/73570745/230779830-cfc34f35-54a1-45d5-81c0-3d6388b65219.png)<br>
+<b><i>Figure 5<br>Multiple linear regression plot using seaborn library(python)</i></b>
  <br>
  <br>
 </div>
-<p>
-The predicted values from SVM model when evaluated using metrics of linear regression:
-<br>
-MSE = 0.53
-<br>
-with R<sup>2</sup> = -1.92
-<br>
-</p>
 
+<h2>Flowchart: </h2>
+</br>
+<div align="center">
+![image](https://user-images.githubusercontent.com/73570745/230779794-10538b3f-9ef2-498c-8223-7c6e194deb81.png)
+<br>
+<b><i>Figure 5<br>Multiple linear regression plot using seaborn library(python)</i></b>
+ <br>
+ <br>
+</div>
+
+<h2>Algorithm: </h2>
+</br>
+Algorithm for the system's operation:
+<br>
+<ol>
+<li>Start</li>
+
+<li>The system is first powered with the appropriate amount of power supply.</li>
+
+<li>Alcohol sensor determines if the motorist is intoxicated or not once the device is turned on</li>
+
+<li>The device warns the driver if they are too intoxicated, and the car's engine shuts off.</li>
+
+<li>If no alcohol is found, the car will either start right up or keep running.</li>
+
+<li>Eye blink sensors can tell if a motorist is sleepy or awake.</li>
+
+<li>The technology alerts the motorist with an alarm and a red light alert if he is dozing off.</li>
+
+<li>The engine's heat is continuously detected by the temperature sensor, and if the engine is overheated compared to a normal state, the driver receives a red light alert; otherwise, the vehicle continues to move.</li>
+
+<li>If an accident occurs, the accelerometer recognises it and sends a signal to the microcontroller so it may continue to operate.</li>
+
+<li>The position is determined by the GPS module, and the GSM module sends a message with the latitude, longitude, and a link to a Google Map with emergency phone numbers for the police and ambulance.</li>
+
+<li>As soon as the system is turned on, it uses an Arduino Uno microcontroller to continually monitor all the sensors in order to carry out all the prevention, detection, and reporting tasks.</li>
+</ol>
+</br>
+
+<h2>Implementation</h2>
