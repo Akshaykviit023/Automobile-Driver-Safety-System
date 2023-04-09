@@ -1,7 +1,7 @@
 # Automobile-Driver-Safety-System
 Drowsiness detection system integrated with PC and Arduino UNO to create an alert system. And creating a system to alert the nearest emergency points whenever the driver accident is encountered.
 
-A project done for the course CSE3505 - Essentials of Data Analytics under <b>ELANGO N M</b>
+A project done for the course CSE1901 - Technical Answers for Real-World Problems under <b>Dr.Jayanthi.R</b>
 <h3>Team members</h3>
 <ul>
 <li><b>AKSHAY GIRISH 20BCE1573</b> Github: <a href="https://github.com/Akshaykviit023">Akshaykviit023</a></li>
@@ -97,9 +97,14 @@ Overall, this research proposes a novel approach to addressing the critical issu
 
 <h2>Device setup: </h2>
 </br>
+<h3>Module-1 Integration</h3>
 <div align="center">
-<img src="https://user-images.githubusercontent.com/113085803/229284656-286a3290-3c96-4929-ae31-761456cbc3e4.png"><br>
-<b><i>Figure 5<br>Multiple linear regression plot using seaborn library(python)</i></b>
+<img src="https://user-images.githubusercontent.com/73570745/230781467-55420b66-4247-41bb-b34a-bd3c03412b15.png"><br>
+
+</br>
+<h3>Module-2 Integration</h3>
+<div align="center">
+<img src="https://user-images.githubusercontent.com/73570745/230781485-c97a951a-c577-413b-aad6-cb7cc52c96c0.png"><br>
  <br>
  <br>
 </div>
@@ -108,7 +113,6 @@ Overall, this research proposes a novel approach to addressing the critical issu
 </br>
 <div align="center">
 <img src="https://user-images.githubusercontent.com/73570745/230779830-cfc34f35-54a1-45d5-81c0-3d6388b65219.png"><br>
-<b><i>Figure 5<br>Multiple linear regression plot using seaborn library(python)</i></b>
 
  <br>
  <br>
@@ -117,11 +121,11 @@ Overall, this research proposes a novel approach to addressing the critical issu
 <h2>Flowchart: </h2>
 </br>
 <div align="center">
-![image](https://user-images.githubusercontent.com/73570745/230779794-10538b3f-9ef2-498c-8223-7c6e194deb81.png)
-<br>
-<b><i>Figure 5<br>Multiple linear regression plot using seaborn library(python)</i></b>
+<img src="https://user-images.githubusercontent.com/73570745/230779794-10538b3f-9ef2-498c-8223-7c6e194deb81.png"><br>
+
  <br>
  <br>
+
 </div>
 
 <h2>Algorithm: </h2>
@@ -153,4 +157,4 @@ Algorithm for the system's operation:
 </ol>
 </br>
 
-<h2>Implementation</h2>
+<h2>Sample Result: </h2>
