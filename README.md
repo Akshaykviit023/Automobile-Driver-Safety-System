@@ -107,8 +107,9 @@ Overall, this research proposes a novel approach to addressing the critical issu
 <h2>Block Diagram: </h2>
 </br>
 <div align="center">
-![image](https://user-images.githubusercontent.com/73570745/230779830-cfc34f35-54a1-45d5-81c0-3d6388b65219.png)<br>
+<img src="https://user-images.githubusercontent.com/73570745/230779830-cfc34f35-54a1-45d5-81c0-3d6388b65219.png"><br>
 <b><i>Figure 5<br>Multiple linear regression plot using seaborn library(python)</i></b>
+
  <br>
  <br>
 </div>
