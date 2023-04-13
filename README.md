@@ -160,3 +160,8 @@ Algorithm for the system's operation:
 </br>
 
 <h2>Sample Result: </h2>
+<br>
+<div align="center">
+<img src="https://user-images.githubusercontent.com/73570745/231672176-534aea55-26db-498c-8ffd-86854c010700.jpg"><br>
+ <br>
+ 
